@@ -1,0 +1,17 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/var/www/c1075/data/www/diyorsale.c1075.coresuz.ru/bot.py", line 1268, in <module>
+    asyncio.run(main())
+  File "/opt/ispmanager/python3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/ispmanager/python3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ispmanager/python3.11/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/var/www/c1075/data/www/diyorsale.c1075.coresuz.ru/bot.py", line 1214, in main
+    add_purchase_callbacks(dp)
+    ^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'add_purchase_callbacks' is not defined

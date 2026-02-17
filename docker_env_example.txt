@@ -1,0 +1,6 @@
+# Dockerfile ga qo'shish
+ENV PIXY_SEED_PHRASE="project fever need bunker symptom surround model radio guess digital copper bar student meat depth promote real act system spare copy reveal embark hybrid"
+
+# Yoki docker-compose.yml da:
+environment:
+  - PIXY_SEED_PHRASE=project fever need bunker symptom surround model radio guess digital copper bar student meat depth promote real act system spare copy reveal embark hybrid

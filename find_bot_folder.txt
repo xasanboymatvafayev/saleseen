@@ -1,0 +1,14 @@
+# Hostingda odatiy papka yo'llari:
+
+# 1. Public papkalar:
+cd /home/username/public_html/
+cd /var/www/html/
+cd /home/user/www/
+
+# 2. Fayllarni topish uchun:
+find /home -name "bot.py" 2>/dev/null
+find /var -name "bot.py" 2>/dev/null
+
+# 3. Papkani tekshirish:
+ls -la
+pwd

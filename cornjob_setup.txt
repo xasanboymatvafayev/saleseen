@@ -1,0 +1,7 @@
+# Cron job orqali botni ishga tushirish
+
+# Har daqiqa botni tekshirib turish (agar ishlamayotgan bo'lsa qayta ishga tushirish)
+* * * * * cd /home/user/public_html/ && source bot_env/bin/activate && python bot.py >/dev/null 2>&1
+
+# Yoki 5 daqiqada bir tekshirish
+*/5 * * * * cd /home/user/public_html/ && source bot_env/bin/activate && python bot.py >/dev/null 2>&1

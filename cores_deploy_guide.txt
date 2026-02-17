@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Cores.uz da tez joylash uchun buyruqlar
+
+echo "=== Cores.uz da Telegram Bot Joylash ==="
+echo ""
+
+# 1. Serverga ulaning
+echo "1. SSH orqali ulaning:"
+echo "ssh root@SERVER_IP_ADDRESS"
+echo ""
+
+# 2. Quyidagi buyruqlarni ketma-ket bajaring
+echo "2. Quyidagi buyruqlarni bajaring:"
+echo ""
+echo "# System update"
+echo "sudo apt update && sudo apt upgrade -y"
+echo ""
+echo "# Python o'rnatish"
+echo "sudo apt install python3 python3-pip python3-venv git -y"
+echo ""
+echo "# Papka yaratish va o'tish"
+echo "mkdir -p /root/bot && cd /root/bot"
+echo ""
+echo "# Virtual environment"
+echo "python3 -m venv bot_env && source bot_env/bin/activate"
+echo ""
+echo "# Kutubxonalar"
+echo "pip install aiogram python-dotenv"
+echo ""
+echo "# Fayllarni yuklash (FTP yoki Git orqali)"
+echo "# Bot fayllarini shu papkaga yuklang"
+echo ""
+echo "# Botni ishga tushirish"
+echo "nohup python bot.py > bot.log 2>&1 &"
+echo ""
+echo "# Holatni tekshirish"
+echo "ps aux | grep python"
+echo ""
+
+echo "3. Loglarni kuzatish:"
+echo "tail -f /root/bot/bot.log"
+echo ""
+
+echo "4. Systemd xizmati (ixtiyoriy):"
+echo "sudo nano /etc/systemd/system/bot.service"
+echo "# Yuqoridagi bot.service fayl kontentini qo'ying"
+echo "sudo systemctl enable bot.service && sudo systemctl start bot.service"
